@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+          fontFamily: {
+            'amatic': ['"Amatic SC"', 'cursive']
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+  <div class="text-center py-5">
+    <h1 class="text-6xl font-bold font-amatic">
+      Eat your spaghetti, to forgetti your regretti
+    </h1>
+  </div>
+  <img class="mx-auto my-16 py-0 w-4/5 max-w-lg border-4 border-gray-300 shadow-lg rounded-lg" src="./spaghetti.jpg"
+    alt="spaghetti" srcset="">
+</body>
+
+</html>

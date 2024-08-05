@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="new_user_form">
+            <label for="email_input" class="new_user_input_label">Email</label>
+            <input id="email_input" class="new_user_input" type="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+
+            <label for="password_input" class="new_user_input_label">
+                Password
+            </label>
+            <input id="password_input" class="new_user_input" type="password" placeholder="Enter password" autocomplete="new-password" required />
+            <br>
+            <div class="invalid_email_error">
+                Entered email is invalid
+            </div>
+            <input id="new_user_submit" class="new_user_submit" type="button" value="Submit"
+                onclick="handle_name_submit()">
+        </div>
+    </div>
+</body>
+
+</html>

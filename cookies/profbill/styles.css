@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f7;
+}
+
+.greetings {
+  display: none;
+}
+
+.new_user_input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 20px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.new_user_input:hover {
+  border-color: #86868b;
+}
+
+.new_user_input:focus {
+  border-color: #0071e3;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.3);
+}
+
+.new_user_input_label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #1d1d1f;
+}
+
+.new_user_submit {
+  background-color: #0071e3;
+  color: #ffffff;
+  padding: 12px 24px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.new_user_submit:hover {
+  background-color: #0077ed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.new_user_submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.3);
+}
+
+.new_user_submit:active {
+  background-color: #005bbf;
+  color: #ffffff;
+  transform: scale(0.98);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.invalid_email_error {
+  display: none;
+  color: darkred;
+}
